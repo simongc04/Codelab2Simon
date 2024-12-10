@@ -34,11 +34,10 @@ private fun MainContent(taskManager: TaskManager) {
     }
 }
 
-// Función principal que arranca la aplicación Compose
 fun main() = application {
     val taskManager = TaskManager()
 
-    Window(onCloseRequest = ::exitApplication, title = "Task Manager") {
+    Window(onCloseRequest = ::exitApplication, title = "Task Manager simon") {
         MainScreen(taskManager)
     }
 }
